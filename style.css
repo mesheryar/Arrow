@@ -1,0 +1,43 @@
+.arrow {
+    position: relative;
+    color: #333;
+    font-family: Arial sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+  }
+
+  .arrow:before, .arrow:after {
+    content:"";
+    background: #333;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    width: 1em;
+  }
+
+  .arrow.right:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+ .arrow.left:after {
+    top: 0.66em;
+  }
+
+  .arrow.right:after {
+    bottom: 0.66em;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.arrow:hover, #arrow:focus {
+    color: #c00;
+  }
+  .arrow:hover:before, .arrow:hover:after,  .arrow:focus:before, .arrow:focus:after {
+    background: #c00;
+  }
+  
+  
